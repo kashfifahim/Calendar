@@ -15,6 +15,8 @@
 					[x] talk deadline, date type
 					[x]tutorial deadline, data type	
 		[ ] what kind of operations will we need this class to perform with that data?
+				_ getter and setter methods
+				_ I don't think I need getters-setters
 	[ ] create a Calendar class
 		Calendar class will manage the Entries
 			[ ] what kind of data does a Calendar need to remember to manage entries?
