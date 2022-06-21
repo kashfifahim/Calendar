@@ -18,10 +18,12 @@
 	[ ] create a Calendar class
 		Calendar class will manage the Entries
 			[ ] what kind of data does a Calendar need to remember to manage entries?
-				- using a dictionary to store the Entry objects
-				- Calendar remembers the dictionary object and remembers an integer
-				value to use as a key for the next Entry object added to the dict
+				[-] using a dictionary to store the Entry objects
+				[x] might be better to use a list to store the Entry objects
+				[x] Calendar remembers the listobjects
+				[-] Current date
 			[ ] what kind of methods should it have
 				- I need these Calendar objects to sort the entries
+				- reverse the sorting
 				- I also need the Calendar to remove Entry objects that have past
 				deadlines
