@@ -2,12 +2,18 @@
 '''written by Kashfi Fahim'''
 '''kashfi.fahim@gmail.com'''
 
+import datetime
 from Entry import Entry
 
 class Calendar():
+	'''Calendar object will manage a list of Entry objects holding the events'''
 	def __init__(self):
-		self.entryDict = {}
-		self.nextId = 0
+		self.entryList = [] 
+		self.todayIs = datetime.now()
+
+	'''The Calendar object needs to update todayIs attribute'''
+	def updateDate(self):
+		self.todayIs = datetime.now()		
 
 	'''Create a row of an Entry object'''
 	def createRow(self, title, start_date, end_date, location, country, talkDeadline, tutorialDeadline):
@@ -23,3 +29,7 @@ class Calendar():
 			anEntry = self.entryDict[entryId]
 			print('Row:', entryId)
 			anEntry.show() 
+
+	def sortList(self):
+		self.entryList.sort()
+		return None
