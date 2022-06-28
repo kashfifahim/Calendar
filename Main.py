@@ -2,7 +2,6 @@
 '''written by Kashfi Fahim'''
 '''kashfi.fahim@gmail.com'''
 
-from calendar import calendar
 from Calendar import Calendar
 
 '''2020 Conference Calendar'''
