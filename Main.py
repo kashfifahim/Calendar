@@ -5,6 +5,33 @@
 from calendar import calendar
 from Calendar import Calendar
 
+'''2020 Conference Calendar'''
+url = "https://raw.githubusercontent.com/python-organizers/conferences/master/2020.csv"
+pycon2020 = Calendar()
+pycon2020.start_with_URL(url)
+pycon2020.show()
+
+'''2021 Conference Calendar'''
+url = "https://raw.githubusercontent.com/python-organizers/conferences/master/2021.csv"
+pycon2020 = Calendar()
+pycon2020.start_with_URL(url)
+pycon2020.show()
+
+'''2022 Conference Calendar'''
+url = "https://raw.githubusercontent.com/python-organizers/conferences/master/2022.csv"
+pycon2020 = Calendar()
+pycon2020.start_with_URL(url)
+pycon2020.show()
+
+
+
+
+
+
+
+
+
+
 # '''Testing instantiation of a Calendar object'''
 # pycon2022 = Calendar()
 # pycon2022.createRow('KashfiCon', '2022-05-22', '2022-05-23', 'New York', 'USA', '2022-04-04', '2022-04-01')
@@ -24,15 +51,15 @@ from Calendar import Calendar
 #     })
 #     return calendar_frame
 
-'''Testing feeding csv to Calendar'''
+# '''Testing feeding csv to Calendar'''
 
-'''2020 Conference Calendar'''
-url = "https://raw.githubusercontent.com/python-organizers/conferences/master/2020.csv"
+# '''2020 Conference Calendar'''
+#url = "https://raw.githubusercontent.com/python-organizers/conferences/master/2020.csv"
 # calendar_frame = start_With_Url(url)
-pycon2020 = Calendar()
-pycon2020.start_with_URL(url)
+#pycon2020 = Calendar()
+#pycon2020.start_with_URL(url)
 # pycon2020.from_calendar_frame(calendar_frame)
-pycon2020.show()
+#pycon2020.show()
 
 
 # url = "https://raw.githubusercontent.com/python-organizers/conferences/master/2022.csv"
