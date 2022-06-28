@@ -7,11 +7,12 @@ from datetime import date
 class Entry():
 	def __init__(self, title, start_date, end_date, location, country, talk_deadline, tutorial_deadline):
 		self.title = title
-		self.start_date = date.fromisoformat(start_date)
-		self.end_date = date.fromisoformat(end_date)
+		self.start_date = start_date
+		self.end_date = end_date
+		self.location = location
 		self.country = country
-		self.talk_deadline = date.fromisoformat(talk_deadline)
-		self.tutorial_deadline = date.fromisoformat(tutorial_deadline)
+		self.talk_deadline = talk_deadline
+		self.tutorial_deadline = tutorial_deadline
 
 
 
