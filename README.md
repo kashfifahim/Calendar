@@ -1,5 +1,11 @@
 # Calendar Project
 
+## 02 6/21 Create sort method for Calendar object to sort by event deadlines
+	[] create new sort method
+		[] test out the sort method to display in order of ascending dates	
+	[X] create an instance variable for Calendar to hold the date
+	[X] create a method that will update the date
+
 ## 01 6/20 Create Entry, Calendar Classes
 	[X] create new project
 	[X] create venv
@@ -27,3 +33,7 @@
 				- reverse the sorting
 				- I also need the Calendar to remove Entry objects that have past
 				deadlines
+
+## Backlog
+	[] A calendar method that will update the list by removing the events that have past
+	[] Entry attribute that calculates how many days left before the deadline

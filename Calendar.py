@@ -2,7 +2,7 @@
 '''written by Kashfi Fahim'''
 '''kashfi.fahim@gmail.com'''
 
-import datetime
+from datetime import datetime
 from Entry import Entry
 
 class Calendar():
@@ -18,18 +18,13 @@ class Calendar():
 	'''Create a row of an Entry object'''
 	def createRow(self, title, start_date, end_date, location, country, talkDeadline, tutorialDeadline):
 		anEntry = Entry(title, start_date, end_date, location, country, talkDeadline, tutorialDeadline)
-		newId = self.nextId
-		self.entryDict[newId] = anEntry
-		self.nextId += 1
-		return newId
+		self.entryList.append(anEntry)
+		return self.entryList[-1]
 
 	'''Display the rows'''
 	def show(self):
-		for entryId in self.entryDict:
-			anEntry = self.entryDict[entryId]
-			print('Row:', entryId)
-			anEntry.show() 
+		for num, entry in enumerate(self.entryList):
+			print (num, entry.show())
 
 	def sortList(self):
-		self.entryList.sort()
-		return None
+		pass
